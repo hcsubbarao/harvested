@@ -1,0 +1,742 @@
+--- !ruby/object:Gem::Specification 
+name: harvested
+version: !ruby/object:Gem::Version 
+  hash: 27
+  prerelease: 
+  segments: 
+  - 0
+  - 3
+  - 4
+  version: 0.3.4
+platform: ruby
+authors: 
+- Zach Moazeni
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2011-06-08 00:00:00 Z
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: rails
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ~>
+      - !ruby/object:Gem::Version 
+        hash: 21
+        segments: 
+        - 2
+        - 3
+        - 11
+        version: 2.3.11
+  type: :runtime
+  version_requirements: *id001
+- !ruby/object:Gem::Dependency 
+  name: mysql
+  prerelease: false
+  requirement: &id002 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id002
+- !ruby/object:Gem::Dependency 
+  name: activemerchant
+  prerelease: false
+  requirement: &id003 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id003
+- !ruby/object:Gem::Dependency 
+  name: fastercsv
+  prerelease: false
+  requirement: &id004 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id004
+- !ruby/object:Gem::Dependency 
+  name: campaign_monitor_party
+  prerelease: false
+  requirement: &id005 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id005
+- !ruby/object:Gem::Dependency 
+  name: httparty
+  prerelease: false
+  requirement: &id006 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id006
+- !ruby/object:Gem::Dependency 
+  name: geokit
+  prerelease: false
+  requirement: &id007 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id007
+- !ruby/object:Gem::Dependency 
+  name: jammit
+  prerelease: false
+  requirement: &id008 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id008
+- !ruby/object:Gem::Dependency 
+  name: crypt
+  prerelease: false
+  requirement: &id009 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id009
+- !ruby/object:Gem::Dependency 
+  name: rest-client
+  prerelease: false
+  requirement: &id010 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id010
+- !ruby/object:Gem::Dependency 
+  name: ofx-parser
+  prerelease: false
+  requirement: &id011 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id011
+- !ruby/object:Gem::Dependency 
+  name: will_paginate
+  prerelease: false
+  requirement: &id012 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id012
+- !ruby/object:Gem::Dependency 
+  name: database_cleaner
+  prerelease: false
+  requirement: &id013 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id013
+- !ruby/object:Gem::Dependency 
+  name: delayed_job
+  prerelease: false
+  requirement: &id014 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id014
+- !ruby/object:Gem::Dependency 
+  name: jammit
+  prerelease: false
+  requirement: &id015 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id015
+- !ruby/object:Gem::Dependency 
+  name: hipchat
+  prerelease: false
+  requirement: &id016 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id016
+- !ruby/object:Gem::Dependency 
+  name: ezcrypto
+  prerelease: false
+  requirement: &id017 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id017
+- !ruby/object:Gem::Dependency 
+  name: daemon-spawn
+  prerelease: false
+  requirement: &id018 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id018
+- !ruby/object:Gem::Dependency 
+  name: rspec
+  prerelease: false
+  requirement: &id019 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        hash: 25
+        segments: 
+        - 1
+        - 3
+        - 1
+        version: 1.3.1
+  type: :runtime
+  version_requirements: *id019
+- !ruby/object:Gem::Dependency 
+  name: rspec-rails
+  prerelease: false
+  requirement: &id020 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        hash: 13
+        segments: 
+        - 1
+        - 2
+        - 9
+        version: 1.2.9
+  type: :runtime
+  version_requirements: *id020
+- !ruby/object:Gem::Dependency 
+  name: cucumber
+  prerelease: false
+  requirement: &id021 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        hash: 53
+        segments: 
+        - 0
+        - 8
+        - 5
+        version: 0.8.5
+  type: :runtime
+  version_requirements: *id021
+- !ruby/object:Gem::Dependency 
+  name: webrat
+  prerelease: false
+  requirement: &id022 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        hash: 7
+        segments: 
+        - 0
+        - 6
+        - 0
+        version: 0.6.0
+  type: :runtime
+  version_requirements: *id022
+- !ruby/object:Gem::Dependency 
+  name: cucumber-rails
+  prerelease: false
+  requirement: &id023 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        hash: 23
+        segments: 
+        - 0
+        - 3
+        - 2
+        version: 0.3.2
+  type: :runtime
+  version_requirements: *id023
+- !ruby/object:Gem::Dependency 
+  name: freshbooks.rb
+  prerelease: false
+  requirement: &id024 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        hash: 35
+        segments: 
+        - 3
+        - 0
+        - 18
+        version: 3.0.18
+  type: :runtime
+  version_requirements: *id024
+- !ruby/object:Gem::Dependency 
+  name: harvested
+  prerelease: false
+  requirement: &id025 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        hash: 27
+        segments: 
+        - 0
+        - 3
+        - 4
+        version: 0.3.4
+  type: :runtime
+  version_requirements: *id025
+- !ruby/object:Gem::Dependency 
+  name: devpayments
+  prerelease: false
+  requirement: &id026 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        hash: 25
+        segments: 
+        - 1
+        - 3
+        - 1
+        version: 1.3.1
+  type: :runtime
+  version_requirements: *id026
+- !ruby/object:Gem::Dependency 
+  name: igen-client
+  prerelease: false
+  requirement: &id027 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        hash: 19
+        segments: 
+        - 0
+        - 3
+        - 0
+        version: 0.3.0
+  type: :runtime
+  version_requirements: *id027
+- !ruby/object:Gem::Dependency 
+  name: hoptoad_notifier
+  prerelease: false
+  requirement: &id028 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        hash: 13
+        segments: 
+        - 2
+        - 4
+        - 9
+        version: 2.4.9
+  type: :runtime
+  version_requirements: *id028
+- !ruby/object:Gem::Dependency 
+  name: ruby-debug
+  prerelease: false
+  requirement: &id029 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :development
+  version_requirements: *id029
+- !ruby/object:Gem::Dependency 
+  name: shoulda
+  prerelease: false
+  requirement: &id030 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :development
+  version_requirements: *id030
+- !ruby/object:Gem::Dependency 
+  name: rspec
+  prerelease: false
+  requirement: &id031 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        hash: 25
+        segments: 
+        - 1
+        - 3
+        - 1
+        version: 1.3.1
+  type: :development
+  version_requirements: *id031
+- !ruby/object:Gem::Dependency 
+  name: rspec-rails
+  prerelease: false
+  requirement: &id032 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - "="
+      - !ruby/object:Gem::Version 
+        hash: 13
+        segments: 
+        - 1
+        - 2
+        - 9
+        version: 1.2.9
+  type: :development
+  version_requirements: *id032
+- !ruby/object:Gem::Dependency 
+  name: factory_girl
+  prerelease: false
+  requirement: &id033 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :development
+  version_requirements: *id033
+- !ruby/object:Gem::Dependency 
+  name: rspec
+  prerelease: false
+  requirement: &id034 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 13
+        segments: 
+        - 1
+        - 2
+        - 9
+        version: 1.2.9
+  type: :development
+  version_requirements: *id034
+- !ruby/object:Gem::Dependency 
+  name: cucumber
+  prerelease: false
+  requirement: &id035 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :development
+  version_requirements: *id035
+- !ruby/object:Gem::Dependency 
+  name: ruby-debug
+  prerelease: false
+  requirement: &id036 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :development
+  version_requirements: *id036
+- !ruby/object:Gem::Dependency 
+  name: fakeweb
+  prerelease: false
+  requirement: &id037 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :development
+  version_requirements: *id037
+- !ruby/object:Gem::Dependency 
+  name: httparty
+  prerelease: false
+  requirement: &id038 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id038
+- !ruby/object:Gem::Dependency 
+  name: happymapper
+  prerelease: false
+  requirement: &id039 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id039
+- !ruby/object:Gem::Dependency 
+  name: builder
+  prerelease: false
+  requirement: &id040 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id040
+description: Harvested wraps the Harvest API concisely without the use of Rails dependencies. More information about the Harvest API can be found on their website (http://www.getharvest.com/api). For support hit up the Mailing List (http://groups.google.com/group/harvested)
+email: zach.moazeni@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: []
+
+files: 
+- .document
+- .gitignore
+- HISTORY
+- MIT-LICENSE
+- README.md
+- Rakefile
+- VERSION
+- examples/basics.rb
+- examples/clear_account.rb
+- examples/task_assignments.rb
+- examples/user_assignments.rb
+- features/account.feature
+- features/client_contacts.feature
+- features/clients.feature
+- features/errors.feature
+- features/expense_categories.feature
+- features/expenses.feature
+- features/hardy_client.feature
+- features/projects.feature
+- features/reporting.feature
+- features/step_definitions/account_steps.rb
+- features/step_definitions/assignment_steps.rb
+- features/step_definitions/contact_steps.rb
+- features/step_definitions/debug_steps.rb
+- features/step_definitions/error_steps.rb
+- features/step_definitions/expenses_steps.rb
+- features/step_definitions/harvest_steps.rb
+- features/step_definitions/model_steps.rb
+- features/step_definitions/people_steps.rb
+- features/step_definitions/report_steps.rb
+- features/step_definitions/time_entry_steps.rb
+- features/support/env.rb
+- features/support/error_helpers.rb
+- features/support/fixtures/empty_clients.xml
+- features/support/fixtures/over_limit.xml
+- features/support/fixtures/receipt.png
+- features/support/fixtures/under_limit.xml
+- features/support/harvest_credentials.example.yml
+- features/support/harvest_helpers.rb
+- features/support/inflections.rb
+- features/task_assignment.feature
+- features/tasks.feature
+- features/time_tracking.feature
+- features/user_assignments.feature
+- features/users.feature
+- harvested.gemspec
+- lib/harvest/api/account.rb
+- lib/harvest/api/base.rb
+- lib/harvest/api/clients.rb
+- lib/harvest/api/contacts.rb
+- lib/harvest/api/expense_categories.rb
+- lib/harvest/api/expenses.rb
+- lib/harvest/api/invoices.rb
+- lib/harvest/api/projects.rb
+- lib/harvest/api/reports.rb
+- lib/harvest/api/task_assignments.rb
+- lib/harvest/api/tasks.rb
+- lib/harvest/api/time.rb
+- lib/harvest/api/user_assignments.rb
+- lib/harvest/api/users.rb
+- lib/harvest/base.rb
+- lib/harvest/base_model.rb
+- lib/harvest/behavior/activatable.rb
+- lib/harvest/behavior/crud.rb
+- lib/harvest/client.rb
+- lib/harvest/contact.rb
+- lib/harvest/credentials.rb
+- lib/harvest/errors.rb
+- lib/harvest/expense.rb
+- lib/harvest/expense_category.rb
+- lib/harvest/hardy_client.rb
+- lib/harvest/invoice.rb
+- lib/harvest/project.rb
+- lib/harvest/rate_limit_status.rb
+- lib/harvest/task.rb
+- lib/harvest/task_assignment.rb
+- lib/harvest/time_entry.rb
+- lib/harvest/timezones.rb
+- lib/harvest/user.rb
+- lib/harvest/user_assignment.rb
+- lib/harvested.rb
+- spec/harvest/base_spec.rb
+- spec/harvest/credentials_spec.rb
+- spec/harvest/expense_spec.rb
+- spec/harvest/task_assignment_spec.rb
+- spec/harvest/time_entry_spec.rb
+- spec/harvest/user_assignment_spec.rb
+- spec/harvest/user_spec.rb
+- spec/spec.default.opts
+- spec/spec_helper.rb
+homepage: http://github.com/zmoazeni/harvested
+licenses: []
+
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.7.2
+signing_key: 
+specification_version: 3
+summary: A Ruby Wrapper for the Harvest API http://www.getharvest.com/
+test_files: []
+
+
